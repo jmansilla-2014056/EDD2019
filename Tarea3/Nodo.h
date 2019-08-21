@@ -8,8 +8,8 @@ class Nodo
 {
 	public:
 		Nodo *siguiente=0;
-                Nodo *izquierda=0;
                 Nodo *derecha=0;
+                Nodo *izquierda=0;
 	
                 string dia;
                 string actividad;

@@ -22,11 +22,13 @@
 
 class List {
 public:
+    
     Nodo* cabeza;
     void insertar(string dia, string activdad);
     Nodo* insertar_dia(string dia);
-    Nodo* exist_dis_empia(string dia);
+    Nodo* ya_dia(string dia);
     bool esta_vacio(); 
+    void reporte();
     private:
 };
 

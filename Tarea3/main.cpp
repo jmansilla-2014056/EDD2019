@@ -26,6 +26,8 @@ List lista;
  */
 int main(int argc, char** argv) {
     while (true) {
+        
+        
         printf("%s\n", "1. Ingresar dia , 2.ingresar actividad, 3 imprimir");
         string o;
             cin>>o;
@@ -33,7 +35,7 @@ int main(int argc, char** argv) {
                 printf("%s\n", "Ingresar el dia");
                 string dia;
                 cin >>dia;
-                lista.insertar(dia, "");
+                lista.insertar_dia(dia);
             }else if(o=="2"){
                 printf("%s\n", "Ingresar el dia");
                 string dias;                
@@ -43,9 +45,8 @@ int main(int argc, char** argv) {
                 cin >>act;
                 lista.insertar(dias,act);
             }else if(o=="3"){
-                
+                lista.reporte();
             }
-            o = "9999";
     }
     return 0;
 }
